@@ -1,0 +1,49 @@
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <title>my_cinema_movie</title>
+    </head>
+    <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="http://localhost/my_cinema_movie.html">Films</a></li>
+                <li><a href="http://localhost/my_cinema_User.html">Utilisateurs</a></li>
+                <li><a href="http://localhost/my_cinema_projection.html">Projections</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div id="recherche">
+                <div>
+                    Nom<input id="name" type="text">
+                    Genre<input id="genre" type="text">
+                    Distributeur<input id="distributor" type="text">
+                </div>
+                <div>
+                    <button id="submit">Rechercher</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <table id="result"></table>
+        </section>
+    </main>
+    </body>
+    <footer>
+        <nav class="pagination-container">
+            <button class="pagination-button" id="prev-button" title="Previous page" aria-label="Previous page">
+                &lt;
+            </button>
+            <div id="pagination-numbers">
+            </div>
+            
+            <button class="pagination-button" id="next-button" title="Next page" aria-label="Next page">
+              &gt;
+            </button>
+        </nav>
+    </footer>
+    <script src="./result_movie.js"></script>
+</html>

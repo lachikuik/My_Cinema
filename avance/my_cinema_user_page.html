@@ -1,0 +1,61 @@
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <title>my_cinema_Abonnement</title>
+    </head>
+    <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="http://localhost/my_cinema_movie.html">Films</a></li>
+                <li><a href="http://localhost/my_cinema_User.html">Utilisateurs</a></li>
+                <li><a href="http://localhost/my_cinema_projection.html">Projections</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>  
+        <section>
+            <table id="result"></table>
+            <div id="add"> 
+                <p id="user-id"></p> 
+                <p id="first"></p>
+                <p id="lastname"></p>
+                <select name="Abonnement" id="abonnement">
+                    <option value="">--Please choose an option--</option>
+                    <option value="4">Pass Day</option>
+                    <option value="3">Classic</option>
+                    <option value="2">GOLD</option>
+                    <option value="1">VIP</option>
+                </select>
+                <button id="submitCR">Create</button>
+                <button id="submitU">Update</button>
+                <button id="submitD">Delete</button>
+            </div>
+            <br>
+            <h2>History</h2>
+            <br>
+            <select name="film vu" id="movie_history">
+                <option value="">Choose a moovie</option>
+            </select>
+            <button id="add_history">add</button>
+            <table id="resultHistory"></table>
+        </section>
+    </main>
+    </body>
+    <footer>
+        <nav class="pagination-container">
+            <button class="pagination-button" id="prev-button" title="Previous page" aria-label="Previous page">
+                &lt;
+            </button>
+            <div id="pagination-numbers">
+            </div>
+            
+            <button class="pagination-button" id="next-button" title="Next page" aria-label="Next page">
+              &gt;
+            </button>
+        </nav>
+    </footer>
+    <script src="./result_User_page.js"></script>
+    <script src="./result_User_page_history.js"></script>
+</html>
